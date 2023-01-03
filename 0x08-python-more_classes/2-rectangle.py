@@ -21,7 +21,7 @@ class Rectangle:
         """Get/set the width of the Rectangle."""
         return self.__width
     
-    @width .setter
+    @width.setter
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -34,7 +34,7 @@ class Rectangle:
         """Get/set the height of the Rectangle."""
         return self.__height
     
-    @height . setter
+    @height.setter
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -48,6 +48,6 @@ class Rectangle:
     
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
-        if self.__width == 0 or self.___height == 0:
+        if self.__width == 0 or self.__height == 0:
             return (0)
-        return ((self._width * 2) + (self.__height * 2))
+        return ((self.__width * 2) + (self.__height * 2))
